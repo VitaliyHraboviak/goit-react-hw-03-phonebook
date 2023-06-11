@@ -83,6 +83,6 @@ import css from './App.module.css';
 };
 }
 App.propTypes = {
-  onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func
 };
 export default App;
