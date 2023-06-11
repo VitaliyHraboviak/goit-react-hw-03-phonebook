@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './Container.module.css';
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
 
@@ -63,4 +64,8 @@ class Container extends Component {
     )
 }
 }
-export default Container
+Container.propTypes = {
+  onSubmit: PropTypes.func.isRequired
+};
+
+export default Container;

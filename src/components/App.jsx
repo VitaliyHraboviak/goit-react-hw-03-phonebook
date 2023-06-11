@@ -5,6 +5,7 @@ import ContactsList from './ContactsList/ContactsList';
 import initialContacts from '../components/Contacts.json';
 import Filter from './Filter/Filter';
 import shortid from 'shortid';
+import PropTypes from 'prop-types';
 import css from './App.module.css';
 
  class App extends Component {
@@ -81,4 +82,7 @@ import css from './App.module.css';
   );
 };
 }
+App.propTypes = {
+  onSubmit: PropTypes.func.isRequired
+};
 export default App;
